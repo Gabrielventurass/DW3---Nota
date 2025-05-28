@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Notas</title>
+</head>
+<body>
+    <h1>Manutenção de Notas</h1>
+    <form action="index.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Formulário</legend>
+            <label for="id">Id:</label>
+            <input type="text" name="id" readonly value={id}>
+
+            <label for="trimestre">Trimestre:</label>
+            <input type="text" name="trimestre" value={trimestre}>
+
+            <label for="descricao">Descrição:</label>
+            <input type="text" name="descricao" value={descricao}>
+
+            <label for="valor">Valor:</label>
+            <input type="text" name="valor" value={valor}>
+
+            <label for="datalancada">Data Lançada:</label>
+            <input type="text" placeholder="XX/XX/XXXX" name="datalancada" value={datalancada}>
+
+            <label for="anexo">Anexo:</label>
+            <input type="file" name="anexo" value={anexo}>
+
+            <button type="submit" name="acao" value="salvar">Salvar</button>
+            <button type="submit" name="acao" value="excluir">Excluir</button>
+            <input type="reset" value="Cancelar">
+        </fieldset>
+    </form>
+</body>
+</html>
